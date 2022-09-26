@@ -1,0 +1,8 @@
+<div class="container">
+  <h3>Profile Demo</h3>
+
+  <ng-container *ngIf="auth.user$ | async as user">
+    <p>{{ user.name }}</p>
+    <p>{{ user.email }}</p>
+  </ng-container>
+</div>
